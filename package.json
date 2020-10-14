@@ -1,21 +1,38 @@
 {
-  "name": "y",
+  "name": "uiautomation",
   "version": "1.0.0",
   "description": "UI automation with webdriverIO",
-  "main": "index.js",
+  "main": "./node_modules/.bin/wdio",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "wdio wdio.conf.js"
   },
   "keywords": [],
   "author": "Ashwini.N.",
   "license": "ISC",
   "devDependencies": {
-    "@wdio/cli": "^6.6.4"
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "@wdio/cli": "^6.0.5",
+    "@wdio/local-runner": "^6.6.4",
+    "@wdio/mocha-framework": "^6.6.3",
+    "@wdio/spec-reporter": "^6.6.3",
+    "@wdio/sync": "^6.6.4",
+    "chromedriver": "^86.0.0",
+    "wdio-chromedriver-service": "^6.0.4",
+    "wdio-json-reporter": "^2.0.0"
   },
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-    "wdio-chromedriver-service": "^6.0.4"
-  }
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashwinian/uiautomation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashwinian/uiautomation/issues"
+  },
+  "homepage": "https://github.com/ashwinian/uiautomation#readme"
 }
