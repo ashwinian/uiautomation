@@ -1,0 +1,25 @@
+#Created by Ashwini to ignore files not to be tracked
+
+# Dependency directories
+node_modules/
+
+#packagelock
+package-lock.json
+
+#Logs
+logs
+*.log
+
+# Optional npm cache directory
+.npm
+
+#html report folder
+*html/
+
+#Intellij
+*.iml
+*.ipr
+*.iws
+.idea
+
+
