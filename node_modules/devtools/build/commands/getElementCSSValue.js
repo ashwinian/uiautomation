@@ -1,0 +1,16 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const getElementCSSValue_1 = __importDefault(require("../scripts/getElementCSSValue"));
+const utils_1 = require("../utils");
+async function getElementCSSValue({ elementId, propertyName }) {
+    const elementHandle = await this.elementStore.get(elementId);
+    if (!elementHandle) {
+        throw utils_1.getStaleElementError(elementId);
+    }
+    const page = this.getPageHandle(true);
+    return page.$eval('html', getElementCSSValue_1.default, elementHandle, propertyName);
+}
+exports.default = getElementCSSValue;
