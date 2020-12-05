@@ -18,7 +18,6 @@ logs
 
 #Intellij
 *.iml
-*.ipr
 *.iws
 .idea
 
